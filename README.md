@@ -13,3 +13,15 @@ A good alternative to sklearn. It is written in Java but has a scala DSL facade 
 
 **cons**:
 - currently don't have a deep learning support;
+
+## [doddle-model](https://github.com/picnicml/doddle-model)
+A functional library that leverages type classes to implement some relevant ml algorithm (e.g. classification, regression, clustering).
+**pro**
+- a functional design;
+- decent performance (comparable with sklearn);
+- a good api;
+**cons** 
+- hasn't a big activity on GitHub
+- doesn't support a lot of algorithm type
+- hasn't a lof of algorithms
+- doesn't support deep learning
