@@ -27,4 +27,7 @@ A functional library that leverages type classes to implement some relevant ml a
 - doesn't support deep learning.
 
 ## [BIDData](https://github.com/BIDData/BIDMach) 
-:vomiting_face: lack examples in this repository :vomiting_face:
+:no_entry_sign: In this repository there aren't examples about this framework.
+
+This is a very interesting library by a performance point of view. Despite this,
+it is hosted in a bintray repository, that will be dropped soon..
