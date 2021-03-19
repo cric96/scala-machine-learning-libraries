@@ -34,7 +34,7 @@ A functional library that leverages type classes to implement some relevant ml a
 This is a very interesting library by a performance point of view. Despite this,
 it is hosted in a bintray repository, that will be dropped soon..
 
-## [sklearn](https://scikit-learn.org/stable/index.html) and [tensorflow](https://www.tensorflow.org/) leveraging [scalapy](https://scalapy.dev/)
+## [scikit-learn](https://scikit-learn.org/stable/index.html) and [TensorFlow](https://www.tensorflow.org/) leveraging [ScalaPy](https://scalapy.dev/)
 
 ScalaPy is an interesting project.
 It allows the usage of Python libraries via Scala with an ad-hoc syntax. 
