@@ -65,3 +65,5 @@ MLlib is Spark’s machine learning (ML) library. Its goal is to make practical 
 - Utilities: linear algebra, statistics, data handling, etc.
 
 from https://spark.apache.org/docs/latest/ml-guide.html
+
+The spark documentation is very detailed, please refer to that.

@@ -27,15 +27,11 @@ object ClassificationTest extends App {
       StructField("petal_width", DoubleType) ::
       StructField("species", StringType) :: Nil
   )
-  val spark = createSession("Regression")
-  spark.sparkContext.setLogLevel("ERROR")
+  val spark = createSession("Classification")
+
   val assembler = new VectorAssembler()
     .setInputCols(Array(sepalLength, sepalWidth, petalLength, petalWidth))
     .setOutputCol(features)
-
-  val indexer = new StringIndexer()
-    .setInputCol(label)
-    .setOutputCol(target)
 
   val df = assembler.transform(
     spark.read
@@ -43,6 +39,10 @@ object ClassificationTest extends App {
       .schema(schemaStruct)
       .csv(path)
   )
+
+  val indexer = new StringIndexer()
+    .setInputCol(label)
+    .setOutputCol(target)
 
   val indexed = indexer.fit(df).transform(df)
 
