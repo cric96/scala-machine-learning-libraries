@@ -15,7 +15,7 @@ object DeepLearningTest extends App {
   val y = kerasUtils.to_categorical(y_numerical)
   val batch_size = 65
 
-  val compiled = `with`(tf.device("cpu:0")) { tf =>
+  `with`(tf.device("cpu:0")) { tf =>
     {
       val keras = scalapy.py.module("tensorflow.keras")
       val layers = scalapy.py.module("tensorflow.keras.layers")

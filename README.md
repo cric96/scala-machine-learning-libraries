@@ -31,6 +31,7 @@ A functional library that leverages type classes to implement some relevant ml a
 ## [BIDData](https://github.com/BIDData/BIDMach) 
 :no_entry_sign: In this repository there aren't examples about this framework.
 
-## [sklearn](https://scikit-learn.org/stable/index.html) and [tensorflow](https://www.tensorflow.org/) leveraging [scalapy](https://scalapy.dev/)
 This is a very interesting library by a performance point of view. Despite this,
 it is hosted in a bintray repository, that will be dropped soon..
+
+## [sklearn](https://scikit-learn.org/stable/index.html) and [tensorflow](https://www.tensorflow.org/) leveraging [scalapy](https://scalapy.dev/)
