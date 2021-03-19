@@ -3,7 +3,6 @@ package it.unibo
 import me.shadaj.scalapy
 import me.shadaj.scalapy.py.PyQuote
 object ClassificationTest extends App {
-
   val sklearn = scalapy.py.module("sklearn.svm")
   val np = scalapy.py.module("numpy")
   val dataset = scalapy.py.module("sklearn.datasets")
