@@ -31,7 +31,7 @@ A functional library that leverages type classes to implement some relevant ml a
 ## [BIDData](https://github.com/BIDData/BIDMach) 
 :no_entry_sign: In this repository there aren't examples about this framework.
 
-This is a very interesting library by a performance point of view. Despite this,
+This is a very interesting library from a performance point of view. Despite this,
 it is hosted in a bintray repository, that will be dropped soon..
 
 ## [scikit-learn](https://scikit-learn.org/stable/index.html) and [TensorFlow](https://www.tensorflow.org/) leveraging [ScalaPy](https://scalapy.dev/)
@@ -41,3 +41,14 @@ It allows the usage of Python libraries via Scala with an ad-hoc syntax.
 I have integrated Scala code with Keras and Sklearn almost without problems.
 There are some facades (like NumPy and TensorFlow), 
 but they seem to be deprecated or not updated.
+
+**pro**
+- you can access the python ecosystem quite agile;
+- you can leverage scala.native to improve the performance;
+- it is possible to use python libraries with scala typing support.
+
+**cons**
+- it is still quite immature;
+- there aren't a good support from the community (few and poor typing implemented);
+- the documentation is quite limited;
+- you need to implement you own typing if there aren't implement.
