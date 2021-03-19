@@ -24,7 +24,7 @@ A functional library that leverages type classes to implement some relevant ml a
 
 **cons** 
 - hasn't a big activity on GitHub;
-- doesn't support a lot of algorithm type;
+- doesn't support a lot of algorithms;
 - hasn't a plot support;
 - doesn't support deep learning.
 
@@ -35,3 +35,9 @@ This is a very interesting library by a performance point of view. Despite this,
 it is hosted in a bintray repository, that will be dropped soon..
 
 ## [sklearn](https://scikit-learn.org/stable/index.html) and [tensorflow](https://www.tensorflow.org/) leveraging [scalapy](https://scalapy.dev/)
+
+ScalaPy is an interesting project.
+It allows the usage of Python libraries via Scala with an ad-hoc syntax. 
+I have integrated Scala code with Keras and Sklearn almost without problems.
+There are some facades (like NumPy and TensorFlow), 
+but they seem to be deprecated or not updated.
