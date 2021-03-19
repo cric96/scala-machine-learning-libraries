@@ -51,4 +51,5 @@ but they seem to be deprecated or not updated.
 - it is still quite immature;
 - there aren't a good support from the community (few and poor typing implemented);
 - the documentation is quite limited;
-- you need to implement you own typing if there aren't implement.
+- you need to implement you own typing if there aren't implement;
+- matplotlib seems not to work.
