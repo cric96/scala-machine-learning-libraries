@@ -27,7 +27,30 @@ lazy val doddle = project
       "org.scalanlp" %% "breeze-natives" % "1.0"
     )
   )
+//from https://scalapy.dev/
+import scala.sys.process._
+lazy val pythonLdFlags = {
+  val withoutEmbed = "python3-config --ldflags".!!
+  if (withoutEmbed.contains("-lpython")) {
+    withoutEmbed.split(' ').map(_.trim).filter(_.nonEmpty).toSeq
+  } else {
+    val withEmbed = "python3-config --ldflags --embed".!!
+    withEmbed.split(' ').map(_.trim).filter(_.nonEmpty).toSeq
+  }
+}
 
+lazy val pythonLibsDir = { //for python
+  pythonLdFlags.find(_.startsWith("-L")).get.drop("-L".length)
+}
+
+lazy val scalapy = project
+  .in(file("scalapy"))
+  .settings(
+    libraryDependencies += "me.shadaj" %% "scalapy-core" % "0.4.2",
+    libraryDependencies += "me.shadaj" %% "scalapy-numpy" % "0.1.0",
+    fork := true,
+    javaOptions += s"-Djna.library.path=$pythonLibsDir"
+  )
 lazy val root = project
   .in(file("."))
-  .aggregate(smile)
+  .aggregate(smile, doddle)
