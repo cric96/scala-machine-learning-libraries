@@ -34,7 +34,7 @@ A functional library that leverages type classes to implement some relevant ml a
 This is a very interesting library from a performance point of view. Despite this,
 it is hosted in a bintray repository, that will be dropped soon..
 
-## [scikit-learn](https://scikit-learn.org/stable/index.html) and [TensorFlow](https://www.tensorflow.org/) leveraging [ScalaPy](https://scalapy.dev/)
+## [scikit-learn](https://scikit-learn.org/stable/index.html), [TensorFlow](https://www.tensorflow.org/), and [Keras](https://keras.io/) leveraging [ScalaPy](https://scalapy.dev/)
 
 ScalaPy is an interesting project.
 It allows the usage of Python libraries via Scala with an ad-hoc syntax. 
@@ -53,3 +53,15 @@ but they seem to be deprecated or not updated.
 - the documentation is quite limited;
 - you need to implement you own typing if there aren't implement;
 - matplotlib seems not to work.
+
+## [MLlib](https://spark.apache.org/docs/latest/ml-guide.html) (Spark based)
+
+MLlib is Spark’s machine learning (ML) library. Its goal is to make practical machine learning scalable and easy. At a high level, it provides tools such as:
+
+- ML Algorithms: common learning algorithms such as classification, regression, clustering, and collaborative filtering
+- Featurization: feature extraction, transformation, dimensionality reduction, and selection
+- Pipelines: tools for constructing, evaluating, and tuning ML Pipelines
+- Persistence: saving and load algorithms, models, and Pipelines
+- Utilities: linear algebra, statistics, data handling, etc.
+
+from https://spark.apache.org/docs/latest/ml-guide.html
