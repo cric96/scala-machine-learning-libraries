@@ -53,4 +53,4 @@ lazy val scalapy = project
   )
 lazy val root = project
   .in(file("."))
-  .aggregate(smile, doddle)
+  .aggregate(smile, doddle, scalapy)

@@ -7,9 +7,9 @@ object ClassificationTest extends App {
   val sklearn = scalapy.py.module("sklearn.svm")
   val np = scalapy.py.module("numpy")
   val dataset = scalapy.py.module("sklearn.datasets")
-  val boston = dataset.load_iris()
-  val X = boston.data
-  val y = boston.target
+  val iris = dataset.load_iris()
+  val X = iris.data
+  val y = iris.target
   val regression = sklearn.SVC()
   regression.fit(X, y)
   val predict = regression.predict(X)
