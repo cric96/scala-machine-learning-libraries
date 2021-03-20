@@ -52,11 +52,11 @@ lazy val scalapy = project
     javaOptions += s"-Djna.library.path=$pythonLibsDir"
   )
 
-lazy val spark = project
-  .in(file("spark"))
+lazy val mllib = project
+  .in(file("mllib"))
   .enablePlugins(SparkPlugin)
   .settings(sparkComponents ++= Seq("core", "sql", "mllib"))
 
 lazy val root = project
   .in(file("."))
-  .aggregate(smile, doddle, scalapy)
+  .aggregate(smile, doddle, scalapy, mllib)

@@ -23,10 +23,10 @@ A functional library that leverages type classes to implement some relevant ml a
 - a good api;
 
 **cons** 
-- hasn't a big activity on GitHub;
-- doesn't support a lot of algorithms;
-- hasn't a plot support;
-- doesn't support deep learning.
+- it hasn't a big activity on GitHub;
+- it doesn't support a lot of algorithms;
+- it hasn't a plot support;
+- it doesn't support deep learning.
 
 ## [BIDData](https://github.com/BIDData/BIDMach) 
 :no_entry_sign: In this repository there aren't examples about this framework.
@@ -66,4 +66,25 @@ MLlib is Spark’s machine learning (ML) library. Its goal is to make practical 
 
 from https://spark.apache.org/docs/latest/ml-guide.html
 
-The spark documentation is very detailed, please refer to that.
+The spark documentation is very detailed, please refer to that. 
+
+**pro**
+- it has a lot of ml algorithms implemented;
+- it has a beautiful documentation;
+- it supports cluster computation;
+- the API is quite simple.
+- it is a well-supported framework; 
+
+**cons**
+- it could be an overkill (because you don't interested in scale up);
+- the performance is not good as other alternatives;
+- it requires more code than other solution;
+- it hasn't DL support (but DL-Lib seems a solution).
+
+## [BigDL](https://github.com/intel-analytics/BigDL) (Spark based)
+BigDL is a distributed deep learning library for Apache Spark; 
+with BigDL, users can write their deep learning applications as 
+standard Spark programs, which can directly run on top of 
+existing Spark or Hadoop clusters.
+
+from https://bigdl-project.github.io/master/
