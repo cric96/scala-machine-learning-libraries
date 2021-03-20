@@ -1,3 +1,5 @@
+package it.unibo
+
 import org.apache.spark.sql.SparkSession
 
 object Config {

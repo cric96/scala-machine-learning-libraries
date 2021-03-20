@@ -1,5 +1,6 @@
-import ClassificationTest.{model, testData}
-import Config.createSession
+package it.unibo
+
+import it.unibo.Config.createSession
 import org.apache.spark.ml.evaluation.RegressionEvaluator
 import org.apache.spark.ml.feature.VectorAssembler
 import org.apache.spark.ml.regression.LinearRegression

@@ -57,6 +57,19 @@ lazy val mllib = project
   .enablePlugins(SparkPlugin)
   .settings(sparkComponents ++= Seq("core", "sql", "mllib"))
 
+lazy val bigdl = project
+  .in(file("bigdl"))
+  .enablePlugins(SparkPlugin)
+  .settings(sparkComponents ++= Seq("core", "sql", "mllib"))
+  .settings(
+    scalaVersion := "2.11.12",
+    fork := true,
+    javacOptions += "-source 1.8",
+    scalacOptions += "-target:jvm-1.8",
+    libraryDependencies ++= Seq(
+      "com.intel.analytics.bigdl" % "bigdl-SPARK_2.4" % "0.12.1",
+    )
+  )
 lazy val root = project
   .in(file("."))
-  .aggregate(smile, doddle, scalapy, mllib)
+  .aggregate(smile, doddle, scalapy, mllib, bigdl)

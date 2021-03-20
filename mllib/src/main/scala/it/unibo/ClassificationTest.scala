@@ -1,4 +1,6 @@
-import Config._
+package it.unibo
+
+import it.unibo.Config.createSession
 import org.apache.spark.ml.classification.LogisticRegression
 import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
 import org.apache.spark.ml.feature.{StringIndexer, VectorAssembler}
@@ -10,6 +12,7 @@ import org.apache.spark.sql.types.{
 }
 
 import java.nio.file.Path
+
 object ClassificationTest extends App {
   val path =
     Path.of(getClass.getResource("/iris.csv").toURI).toAbsolutePath.toString
