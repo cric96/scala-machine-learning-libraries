@@ -1,5 +1,8 @@
 # Scala ML libraries
 In this repository, there are some minimal examples of ML scala libraries.
+the main focus here is the classification and regression algorithms. 
+I don't eval mathematical libraries. 
+I'm interested in plot capability, so some tests are done even for plot API (if present).
 Each library is contained in an sbt subproject having the same name as the library.
 ## [smile](https://github.com/haifengl/smile)
 A good alternative to sklearn. It is written in Java but has a scala DSL facade that makes the development easier.
@@ -90,3 +93,7 @@ standard Spark programs, which can directly run on top of
 existing Spark or Hadoop clusters.
 
 from https://bigdl-project.github.io/master/
+
+## [ScalaNet](https://github.com/deeplearning4j/ScalNet) a facade for [DeepLearning4J](https://deeplearning4j.org/)
+
+ScalNet is a wrapper around Deeplearning4J emulating a Keras like API for deep learning.

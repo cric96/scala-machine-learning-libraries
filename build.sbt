@@ -57,6 +57,15 @@ lazy val mllib = project
   .enablePlugins(SparkPlugin)
   .settings(sparkComponents ++= Seq("core", "sql", "mllib"))
 
+lazy val scalanet = project
+  .in(file("scalanet"))
+  .settings(
+    scalaVersion := "2.11.12",
+    libraryDependencies ++= Seq(
+      "org.deeplearning4j" %% "scalnet" % "1.0.0-beta",
+      "org.nd4j" % "nd4j-native-platform" % "1.0.0-beta" //for native mathematical operation
+    )
+  )
 lazy val root = project
   .in(file("."))
-  .aggregate(smile, doddle, scalapy, mllib)
+  .aggregate(smile, doddle, scalapy, mllib, scalanet)
