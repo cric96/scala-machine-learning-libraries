@@ -106,7 +106,7 @@ from https://bigdl-project.github.io/master/
 
 ## [ScalaNet](https://github.com/deeplearning4j/ScalNet) a facade for [DeepLearning4J](https://deeplearning4j.org/)
 
-ScalNet is a wrapper around Deeplearning4J emulating a Keras like API for deep learning.
+ScalaNet is a wrapper around Deeplearning4J emulating a Keras like API for deep learning.
 
 **pro**
 - easy enough to use;
