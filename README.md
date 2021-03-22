@@ -94,6 +94,16 @@ existing Spark or Hadoop clusters.
 
 from https://bigdl-project.github.io/master/
 
+**pro**
+- supported by intel;
+- deep learning in a distributed platform;
+- excellent performance;
+
+**cons**
+- not easy to use;
+- there aren't a lot of examples;
+- it is an overkill for little projects;
+
 ## [ScalaNet](https://github.com/deeplearning4j/ScalNet) a facade for [DeepLearning4J](https://deeplearning4j.org/)
 
 ScalNet is a wrapper around Deeplearning4J emulating a Keras like API for deep learning.
