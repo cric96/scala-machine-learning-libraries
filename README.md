@@ -104,9 +104,9 @@ from https://bigdl-project.github.io/master/
 - there aren't a lot of examples;
 - it is an overkill for little projects;
 
-## [ScalaNet](https://github.com/deeplearning4j/ScalNet) a facade for [DeepLearning4J](https://deeplearning4j.org/)
+## [ScalNet](https://github.com/deeplearning4j/ScalNet) a facade for [DeepLearning4J](https://deeplearning4j.org/)
 
-ScalaNet is a wrapper around Deeplearning4J emulating a Keras like API for deep learning.
+ScalNet is a wrapper around Deeplearning4J emulating a Keras like API for deep learning.
 
 **pro**
 - easy enough to use;
@@ -115,6 +115,6 @@ ScalaNet is a wrapper around Deeplearning4J emulating a Keras like API for deep 
 - Spark could be used to run deep learning on a distributed framework;
 
 **cons**
-- ScalaNet is in beta yet;
+- ScalNet is in beta yet;
 - it Seems to be less supported than the main project;
 - it is not famous as other framework;

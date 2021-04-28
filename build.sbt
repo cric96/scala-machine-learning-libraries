@@ -57,8 +57,8 @@ lazy val mllib = project
   .enablePlugins(SparkPlugin)
   .settings(sparkComponents ++= Seq("core", "sql", "mllib"))
 
-lazy val scalanet = project
-  .in(file("scalanet"))
+lazy val scalnet = project
+  .in(file("scalnet"))
   .settings(
     scalaVersion := "2.11.12",
     libraryDependencies ++= Seq(
@@ -68,4 +68,4 @@ lazy val scalanet = project
   )
 lazy val root = project
   .in(file("."))
-  .aggregate(smile, doddle, scalapy, mllib, scalanet)
+  .aggregate(smile, doddle, scalapy, mllib, scalnet)
