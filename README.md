@@ -116,5 +116,5 @@ ScalNet is a wrapper around Deeplearning4J emulating a Keras like API for deep l
 
 **cons**
 - ScalNet is in beta yet;
-- it Seems to be less supported than the main project;
+- it seems to be less supported than the main project;
 - it is not famous as other framework;
